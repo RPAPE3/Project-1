@@ -6,7 +6,7 @@ User Story:
 
 AS AN online trivia enthusiast. 
 I WANT application that will test my trivia knowledge compared to others across the country. 
-SO THAT I can gage my trivia knowledge. 
+SO THAT I can gauge my trivia knowledge. 
 
 API Trivia Link: https://the-trivia-api.com/docs/ 
 API Map Link: https://developers.google.com/maps/documentation/javascript/cloud-setup
@@ -32,6 +32,11 @@ Tasks:
 - On click call trivia API: 
     - plug in info to assigned spots.
     - determine if it's correct or not. 
+
+
+    ![Screenshot](./assets/images/page-1.jpg)
+    ![Screenshot](./assets/images/page-2.jpg)
+    ![Screenshot](./assets/images/page-3.jpg)
 
 
 
