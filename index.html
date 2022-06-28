@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Potta+One&family=Rubik+Moonrocks&family=Titan+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://tailwindui.com">
+    <link rel="stylesheet" href="./assets/images/style.css">
     <title>Project 1</title>
 </head>
+
 <body>
-    
+    <!-- Start quiz and info -->
+    <div id="quiz">
+        <h1>Trivia War!!</h1>
+
+        <h2>Categories</h2>
+        <select
+            class="text-gray-300 form-select appearance-none block w-full px-3 py-1.5 text-base font-normal bg-gray-800 bg-clip-padding bg-no-repeat border border-solid border-gray-700 rounded-md transition duration-300 ease-in-out m-0 focus:border-gray-500 focus:outline-none">
+            <option selected>Categories</option>
+            <option value="1">Arts & Literature</option>
+            <option value="2">Film & TV</option>
+            <option value="3">Food & Drink</option>
+            <option value="3">General Knowledge</option>
+            <option value="3">Geography</option>
+            <option value="3">History</option>
+            <option value="3">Music</option>
+            <option value="3">Science</option>
+            <option value="3">Society & Culture</option>
+            <option value="3">Sport & Leisure</option>
+        </select>
+
+        </br>
+        </br>
+
+        <h2>Difficulty Level</h2>
+        <select
+            class="text-gray-300 form-select appearance-none block w-full px-3 py-1.5 text-base font-normal bg-gray-800 bg-clip-padding bg-no-repeat border border-solid border-gray-700 rounded-md transition duration-300 ease-in-out m-0 focus:border-gray-500 focus:outline-none">
+            <option selected>Difficulty Level</option>
+            <option value="1">Easy</option>
+            <option value="2">Medium</option>
+            <option value="3">Hard</option>
+        </select>
+
+        </br>
+        </br>
+
+        <button class="start-btn">Start</button>
+
+
+
+
+        <!-- <div id="question"></div>
+            <button class="choice_A">Choice A</button>
+            <button class="choice_B">Choice B</button>
+            <button class="choice_C">Choice C</button>
+            <button class="choice_D">Choice D</button> -->
+    </div>
+
+
+
+
+    <script rel="stylesheet" src="./assets/images/script.js"></script>
 </body>
+
 </html>
+
+<!--user input for the last page which will also display their score
+drop boxes for (categories, difficulty)
