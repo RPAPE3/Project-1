@@ -1,7 +1,10 @@
 
 
+var questionIndex = 0;
+
 
 var getUserPreference = function () {
+    //Will need to identify how to pull userInput and userInput_2. 
     var category = userInput; 
     var difficulty = userInput_2; 
 
@@ -19,7 +22,7 @@ var getUserPreference = function () {
         if (response.ok) {
           response.json().then(function (data) {
               console.log(data)
-            displayWeather(data);
+              retrieveFirstQuestion(data);
           });
         } else {
           alert('Error: ' + response.statusText);
@@ -30,5 +33,15 @@ var getUserPreference = function () {
       });
   };
 
+  function retrieveFirstQuestion (data) {
+      
+    var question_screen = data[questionIndex];
 
+    question.innerHTML = question_screen.question;
+    choice_A.innerHTML = question_screen.incorrectAnswers[0];
+    choice_B.innerHTML = question_screen.correctAnswer;
+    choice_C.innerHTML = question_screen.incorrectAnswers[1];
+    choice_D.innerHTML = question_screen.incorrectAnswers[2];
+  }
 
+  
