@@ -1,14 +1,22 @@
-
+var categoryEl = document.querySelector(".category");
+var difficultyEl = document.querySelector(".difficulty");
 
 var questionIndex = 0;
 
 
 var getUserPreference = function () {
-    //Will need to identify how to pull userInput and userInput_2. 
-    var category = userInput; 
-    var difficulty = userInput_2; 
 
-    getQuestionData(category, difficulty)
+
+    var category = categoryEl.value
+    var difficulty = difficultyEl.value
+
+    if (category && difficulty) {
+        getQuestionData(category, difficulty);
+    } else {
+        //NEED TO CHANGE ALERT TO EITHER A HELPER TEST/TEXT? OR SNAKE BAR. 
+        alert("Category and Difficulty but have selections")
+    }
+  
 };
   
   
