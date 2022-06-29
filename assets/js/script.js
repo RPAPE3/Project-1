@@ -9,8 +9,7 @@ var getUserPreference = function () {
     var difficulty = userInput_2; 
 
     getQuestionData(category, difficulty)
-}
-  
+};
   
   
   
@@ -42,6 +41,8 @@ var getUserPreference = function () {
     choice_B.innerHTML = question_screen.correctAnswer;
     choice_C.innerHTML = question_screen.incorrectAnswers[1];
     choice_D.innerHTML = question_screen.incorrectAnswers[2];
-  }
+  };
 
-  
+
+
+
