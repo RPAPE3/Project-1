@@ -1,0 +1,27 @@
+body {
+    background-color: #1e293b;
+}
+
+#quiz {
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+    color: white;
+}
+
+button {
+    background-color: rgb(242, 237, 239);
+    color: #1e293b;
+    font-size: large;
+    font-family: 'Bangers', cursive;
+    border-radius: 30px;
+    width: 150px;
+    cursor: pointer;
+}
+
+#question{
+    display: none;
+}
+
+
+  
