@@ -12,25 +12,27 @@ function autoC() {
 }
 
 function geocode () {
-    var location = locationEl.value;
+    var location2 = locationEl.value;
     axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
         params:{
-            address: location,
+            address: location2,
             key: 'AIzaSyCfxIjECtlR69B-XRURzPSvP9Sdb_Ae73k'
         }
     })
     .then(function(response){
         console.log(response);
+        var longLat = response.data.results[0].geometry.location;
+        var options = {
+            center: longLat,
+            zoom: 12
+        }
+        map = new google.maps.Map(document.getElementById("map"), options);
     })
     .catch(function(error){
         console.log(error);
     })
 }
 
-// var options = {
-//     center: longlat().value,
-//     zoom: 10
-// }
 
 function btn_handler() {
     geocode();
