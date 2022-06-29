@@ -19,9 +19,49 @@ button {
     cursor: pointer;
 }
 
-#question{
+#question {
     display: none;
 }
 
+/* this section for end of game page*/
+.btn {
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+    color: white;
+    display: inherit;
+}
 
-  
+#username {
+    text-align: center;
+    border-radius: 8px;
+    font-size: 25px;
+    margin-top: 80px;
+}
+
+#saveScoreBtn {
+    color: #1e293b;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 22px;
+    display: initial;
+    margin-left: 10px;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.highscores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Bangers', cursive;
+    font-size: 22px;
+    margin-top: 20px;
+}
