@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Project 1</title>
 </head>
 <body>
+    <div>
+        <h2>where</h2>
+        <div>
+            <input id="zipCode" type="text" placeholder="Enter zipcode"/>
+        </div>
+            <button  onclick="btn_handler()" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
     <div id="map" style="height: 1000px; width: 1000px;"></div>
     <script src="./assets/images/script.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUa-ya4vaIeGXzLKbfbj8jU_ExOwyR0f4&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfxIjECtlR69B-XRURzPSvP9Sdb_Ae73k&libraries=places&address&callback=autoC"></script>
     
 </body>
 </html>
