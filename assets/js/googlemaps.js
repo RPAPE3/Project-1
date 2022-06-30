@@ -1,6 +1,6 @@
-var locationEl = document.querySelector('#zipCode');
-var userStory = ("TT - Difficult - 150") //set = to document.querySelector()
-var fakeUsers = [
+const locationEl = document.querySelector('#zipCode');
+const userStory = ("TT - Difficult - 150") //set = to document.querySelector()
+const fakeUsers = [
     "RP - Difficult - 150",
     "JS - Difficult - 150",
     "JC - Difficult - 150",
@@ -13,7 +13,7 @@ var fakeUsers = [
     "SH - Difficult - 150"
 ]
 
-var fakeAddress = [
+const fakeAddress = [
     { lat: 33.469, lng: -112.123 },
     { lat: 32.254, lng: -110.974 },
     { lat: 33.306, lng: -111.841 },
@@ -39,7 +39,7 @@ function autoC() {
 }
 
 function geocode () {
-    var location2 = locationEl.value;
+    const location2 = locationEl.value;
     axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
         params:{
             address: location2,
@@ -47,15 +47,14 @@ function geocode () {
         }
     })
     .then(function(response){
-        // console.log(response);
-        var longLat = response.data.results[0].geometry.location;
-        var options = {
+        const longLat = response.data.results[0].geometry.location;
+        const options = {
             center: longLat,
             zoom: 12
         }
-        var map = new google.maps.Map(document.getElementById("map"), options);
-        var infoWindow = new google.maps.InfoWindow();
-        var marker = new google.maps.Marker({
+        const map = new google.maps.Map(document.getElementById("map"), options);
+        const infoWindow = new google.maps.InfoWindow();
+        const marker = new google.maps.Marker({
             position: longLat,
             map: map,
             optimized: false,
@@ -66,43 +65,28 @@ function geocode () {
             infoWindow.open(marker.getMap(), marker);
         })
         for (let i = 0; i < fakeAddress.length; i++) {
-            var infoWindow2 = new google.maps.InfoWindow() 
-            var marker2 = new google.maps.Marker({
+            const infoWindow2 = new google.maps.InfoWindow() 
+            const marker2 = new google.maps.Marker({
                 position: fakeAddress[i],
                 map: map,
                 optimized: false
             })
-            marker2.addListener("click", () => {
-                infoWindow2.close();
-                infoWindow2.setContent(fakeUsers[i]);
-                // console.log(fakeUsers[i])
-                infoWindow2.open(marker2.getMap(), marker2);
-            })
-         }
-        })  
-    
+            clusterMarkers (marker2, fakeUsers[i], infoWindow2)
+        }
+    })
     .catch(function(error){
         console.log(error);
     })
 }
 
-// function clusterMarkers () {
-//     for (let i = 0; i < fakeAddress.length; i++) {
-//     var infoWindow2 = new google.maps.InfoWindow()
-//     var marker2 = new google.maps.Marker({
-//         position: fakeAddress[i],
-//         optimized: false
-//     })
-//  }
-
-//     marker2.addListener("click", () => {
-//         infoWindow2.close();
-//         infowindow2.setContent(fakeUsers[i]);
-//         infoWindow2.open(marker2.getMap(), marker2);
-//     })
-// }      
+function clusterMarkers (marker2, fakeUser, fakeWindow) {
+    marker2.addListener("click", () => {
+                fakeWindow.close();
+                fakeWindow.setContent(fakeUser);
+                fakeWindow.open(marker2.getMap(), marker2);
+    })
+}
 
 function btn_handler() {
     geocode();
-    // clusterMarkers();
 }
