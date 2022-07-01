@@ -1,4 +1,4 @@
-var startBtn = document.querySelector(".start-btn");
+var startBtn = document.querySelector(".glow-on-hover");
 var categoryEl = document.querySelector(".category");
 var difficultyEl = document.querySelector(".difficulty");
 
