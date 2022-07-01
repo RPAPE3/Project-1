@@ -14,8 +14,7 @@ var getUserPreference = function () {
     if (category === "Categories"  || difficulty === "Difficulty Level") {
         myFunction()
     } else {
-        //NEED TO CHANGE ALERT TO EITHER A HELPER TEST/TEXT? OR SNAKE BAR. 
-        location.assign(`./question.html?category=${category}&difficulty=${difficulty}`);
+        location.assign(`./questions.html?category=${category}&difficulty=${difficulty}`);
     }
 };
 

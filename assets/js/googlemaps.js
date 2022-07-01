@@ -16,16 +16,16 @@ var difficulty = difficultyArray.split('=')[1];
 console.log(category, score, difficulty)
 
 const fakeUsers = [
-    "RP - Difficult - 150",
-    "JS - Difficult - 150",
-    "JC - Difficult - 150",
-    "RW - Difficult - 60",
-    "CM - Difficult - 105",
-    "JL - Difficult - 75",
-    "AS - Difficult - 45",
-    "RB - Difficult - 15",
-    "TB - Difficult - 0",
-    "SH - Difficult - 150"
+    `Username: RPape3 <br> Score: 150 <br> Category: Music <br> Difficulty: Hard`,
+    `Username: JSumba7 <br> Score: 150 <br> Category: Music <br> Difficulty: Hard`,
+    `Username: JCoranguez18 <br> Score: 150 <br> Category: Music <br> Difficulty: Hard`,
+    `Username: RWilcox31 <br> Score: 35 <br> Category: Music <br> Difficulty: Easy`,
+    `Username: CMartin51 <br> Score: 100 <br> Category: Music <br> Difficulty: Medium`,
+    `Username: JLopez2 <br> Score: 75 <br> Category: Music <br> Difficulty: Hard`,
+    `Username: AShearouse45 <br> Score: 45 <br> Category: Music <br> Difficulty: Hard`,
+    `Username: RBarton0 <br> Score: 75 <br> Category: Music <br> Difficulty: Hard`,
+    `Username: TBrady12 <br> Score: 0 <br> Category: Music <br> Difficulty: Easy`,
+    `Username: SHeinen22 <br> Score: 150 <br> Category: Music <br> Difficulty: Hard`
 ]
 
 const fakeAddress = [
@@ -105,8 +105,8 @@ function clusterMarkers (marker2, fakeUser, fakeWindow) {
 function btn_handler(event) {
     event.preventDefault();
     geocode();
-    userStory = (`${userNameEl.value}
-    ${score}
-    ${category}
-    ${difficulty}`); 
+    userStory = (`Username: ${userNameEl.value} <br>
+    Score: ${score} <br>
+    Category: ${category} <br>
+    Difficulty: ${difficulty}`); 
 }
