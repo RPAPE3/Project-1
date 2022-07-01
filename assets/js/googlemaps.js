@@ -1,5 +1,20 @@
-const locationEl = document.querySelector('#zipCode');
-const userStory = ("TT - Difficult - 150") //set = to document.querySelector()
+let locationEl = document.querySelector('#zipCode');
+var userNameEl = document.querySelector('#username');
+
+var transferData = document.location.search;
+var userStory;
+// console.log(userStory)
+
+var scoreArray = transferData.split('&')[2];
+var score = scoreArray.split('=')[1];
+
+var categoryArray = transferData.split('=')[1];
+var category = categoryArray.split('&')[0];
+
+var difficultyArray = transferData.split('&')[1];
+var difficulty = difficultyArray.split('=')[1];
+console.log(category, score, difficulty)
+
 const fakeUsers = [
     "RP - Difficult - 150",
     "JS - Difficult - 150",
@@ -87,6 +102,11 @@ function clusterMarkers (marker2, fakeUser, fakeWindow) {
     })
 }
 
-function btn_handler() {
+function btn_handler(event) {
+    event.preventDefault();
     geocode();
+    userStory = (`${userNameEl.value}
+    ${score}
+    ${category}
+    ${difficulty}`); 
 }

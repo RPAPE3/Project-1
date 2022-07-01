@@ -11,4 +11,4 @@ var difficulty = difficultyArray.split('=')[1];
 var scoreArray = transferData.split('&')[2];
 var score = scoreArray.split('=')[1];
 
-console.log(category, difficulty, score)
+// console.log(category, difficulty, score)

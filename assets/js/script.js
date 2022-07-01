@@ -11,15 +11,19 @@ var getUserPreference = function () {
     var category = categoryEl.value
     var difficulty = difficultyEl.value
 
-    if (category && difficulty) {
-        location.assign(`./question.html?category=${category}&difficulty=${difficulty}`);
+    if (category === "Categories"  || difficulty === "Difficulty Level") {
+        myFunction()
     } else {
         //NEED TO CHANGE ALERT TO EITHER A HELPER TEST/TEXT? OR SNAKE BAR. 
-        alert("Category and Difficulty but have selections")
+        location.assign(`./question.html?category=${category}&difficulty=${difficulty}`);
     }
-  
 };
 
+function myFunction() {
+    var snackbar = document.getElementById("snackbar");
+    snackbar.className = "show";
+    setTimeout(function(){ snackbar.className = snackbar.className.replace("show", "");}, 3000);
+}
 
 
 startBtn.addEventListener("click", getUserPreference);
