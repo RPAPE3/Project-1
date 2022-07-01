@@ -82,7 +82,8 @@ h2 {
     }
 }
 
-.category, .difficutly {
+.difficulty, 
+.category {
     font-size: 26px;
     font-family: 'Bangers', cursive;
     border-radius: 10px;
