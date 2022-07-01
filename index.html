@@ -5,24 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link for glow effects-->
+    <link href="https://webdeasy.de/en/top-css-buttons-en/">"
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Bangers&family=Potta+One&family=Rubik+Moonrocks&family=Titan+One&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://tailwindcomponents.com">
-    <link rel="stylesheet" href="./assets/images/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Project 1</title>
 </head>
 
 <body>
     <!-- Start quiz and info -->
     <div id="quiz">
-        <h1>Trivia War!!</h1>
+        <h1 class="glitch">Trivia War!!</h1>
 
         <h2>Categories</h2>
         <select
-            class="text-gray-300 form-select appearance-none block w-full px-3 py-1.5 text-base font-normal bg-gray-800 bg-clip-padding bg-no-repeat border border-solid border-gray-700 rounded-md transition duration-300 ease-in-out m-0 focus:border-gray-500 focus:outline-none category">
+            class="dropdown">
             <option selected>Categories</option>
             <option value="arts_and_literature">Arts & Literature</option>
             <option value="film_and_tv">Film & TV</option>
@@ -41,7 +43,7 @@
 
         <h2>Difficulty Level</h2>
         <select
-            class="text-gray-300 form-select appearance-none block w-full px-3 py-1.5 text-base font-normal bg-gray-800 bg-clip-padding bg-no-repeat border border-solid border-gray-700 rounded-md transition duration-300 ease-in-out m-0 focus:border-gray-500 focus:outline-none difficulty">
+            class="dropdown">
             <option selected>Difficulty Level</option>
             <option value="easy">Easy</option>
             <option value="medium">Medium</option>
@@ -51,7 +53,7 @@
         </br>
         </br>
 
-        <button class="start-btn">Start</button>
+        <button class="glow-on-hover">Start</button>
     <script rel="stylesheet" src="./assets/js/script.js"></script>
 </body>
 
