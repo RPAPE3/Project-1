@@ -12,7 +12,7 @@ var getUserPreference = function () {
     var difficulty = difficultyEl.value
 
     if (category && difficulty) {
-        location.assign(`./question.html?category=${category}&difficulty=${difficulty}`);
+        location.assign(`./questions.html?category=${category}&difficulty=${difficulty}`);
     } else {
         //NEED TO CHANGE ALERT TO EITHER A HELPER TEST/TEXT? OR SNAKE BAR. 
         alert("Category and Difficulty but have selections")
