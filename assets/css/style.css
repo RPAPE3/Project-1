@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    
 }
 
 #quiz {
@@ -13,7 +14,23 @@ h2 {
     color: white
 }
 
-/* visual effects for title */ 
+/* section, #container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+} */
+
+.title {
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    font-size: 35px;
+    letter-spacing: 4px;
+    color: orange;
+    margin-top: 100px;
+}
+
+
+/* visual effects for title */
 .glitch {
     font-size: 7rem;
     font-weight: bold;
@@ -82,7 +99,7 @@ h2 {
     }
 }
 
-.difficulty, 
+.difficulty,
 .category {
     font-size: 26px;
     font-family: 'Bangers', cursive;
@@ -104,28 +121,28 @@ button {
 
 #snackbar {
     visibility: hidden;
-    min-width: 250px; 
-    margin-left: 50px; 
-    background-color: #333; 
-    color: #fff; 
-    text-align: center; 
-    border-radius: 2px; 
-    padding: 6px; 
-    position: inherit; 
-    z-index: 1; 
+    min-width: 250px;
+    margin-left: 50px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 6px;
+    position: inherit;
+    z-index: 1;
     left: 60%;
-    bottom: 50px; 
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    bottom: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 26px;
     color: red;
     background-color: #000;
-  }
+}
 
-  #snackbar.show {
-    visibility: visible; 
+#snackbar.show {
+    visibility: visible;
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  }
+}
 
 /* visual effects for start and submit button */
 .glow-on-hover {
