@@ -1,6 +1,5 @@
 body {
-    background-color: black;
-    
+    background-color: black; 
 }
 
 #quiz {
@@ -11,14 +10,9 @@ body {
 }
 
 h2 {
-    color: white
+    color: white;
+    font-size: 75px
 }
-
-/* section, #container {
-    display: block;
-    justify-content: center;
-    align-items: center;
-} */
 
 .title {
     text-align: center;
@@ -101,7 +95,7 @@ h2 {
 
 .difficulty,
 .category {
-    font-size: 26px;
+    font-size: 35px;
     font-family: 'Bangers', cursive;
     border-radius: 10px;
     text-align: center;
