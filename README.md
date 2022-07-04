@@ -33,10 +33,10 @@ Tasks:
     - plug in info to assigned spots.
     - determine if it's correct or not. 
 
-    ![Screenshot](./assets/images/Homepage.png)
-    ![Screenshot](./assets/images/page-1.jpg)
-    ![Screenshot](./assets/images/page-2.jpg)
-    ![Screenshot](./assets/images/page-3.jpg)
+    ![Screenshot](./assets/images/homepage.png)
+    ![Screenshot](./assets/images/questions.png)
+    ![Screenshot](./assets/images/endpage.png)
+    
 
 
 
