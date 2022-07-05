@@ -218,7 +218,7 @@ button {
     font-size: 45px;
     color: white;
     display: inherit;
-    margin-left: 5px;
+    /* margin-left: 5px; */
 }
 
 #username, #zipCode {
@@ -247,21 +247,17 @@ button {
 
 }
 
-.highscores {
+.map-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-family: 'Bangers', cursive;
-    font-size: 30px;
-    margin-top: 20px;
+}
+#map{
+    margin-top: 30px;
 }
 
-#map{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin-left: 200px;
-    margin-top: 30px;
+#finalScore {
+    color: white;
+    display: inherit;
+    text-align: center;
 }
