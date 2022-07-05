@@ -1,5 +1,7 @@
 var categoryEl = document.querySelector(".category");
 var difficultyEl = document.querySelector(".difficulty");
+var questionNumberEl = document.querySelector(".question-number");
+var scoreAmountEl = document.querySelector(".scoreAmount")
 var questionEl = document.querySelector(".question");
 var choice_A_El = document.querySelector(".choice_A");
 var choice_B_El = document.querySelector(".choice_B");
@@ -82,6 +84,8 @@ var getQuestionData = function (category, difficulty) {
         choice_B_El.innerHTML = choicesArray[1];
         choice_C_El.innerHTML = choicesArray[2];
         choice_D_El.innerHTML = choicesArray[3];
+        questionNumberEl.innerHTML = "QUESTION NUMBER: " + questionNumber + "/10";
+        scoreAmountEl.innerHTML = "SCORE: " + score;
   };
 
   function keepScore () {

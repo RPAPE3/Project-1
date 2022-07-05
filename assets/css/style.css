@@ -222,7 +222,7 @@ button {
     font-size: 45px;
     color: white;
     display: inherit;
-    /* margin-left: 5px; */
+    margin-left: 5px;
 }
 
 #username, #zipCode {
