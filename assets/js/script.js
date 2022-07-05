@@ -11,37 +11,18 @@ var getUserPreference = function () {
     var category = categoryEl.value
     var difficulty = difficultyEl.value
 
-    if (category && difficulty) {
-        location.assign(`./questions.html?category=${category}&difficulty=${difficulty}`);
+    if (category === "Categories"  || difficulty === "Difficulty Level") {
+        myFunction()
     } else {
-        location.assign(`./question.html?category=${category}&difficulty=${difficulty}`);
+        location.assign(`./questions.html?category=${category}&difficulty=${difficulty}`);
     }
-}
-  
-function myFunction(){
+};
+
+function myFunction() {
     var snackbar = document.getElementById("snackbar");
     snackbar.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    setTimeout(function(){ snackbar.className = snackbar.className.replace("show", "");}, 3000);
 }
-
 
 
 startBtn.addEventListener("click", getUserPreference);
-
-// var getUserPreference = function () {
-
-//     var category = categoryEl.value
-//     var difficulty = difficultyEl.value
-// console.log(category)
-// console.log(difficulty)
-//     if (category && difficulty) {
-//         location.assign(`./question.html?category=${category}&difficulty=${difficulty}`);
-//     } else {
-//        myFunction()
-//     }
-  
-// function myFunction(){
-//     var snackbar = document.getElementById("snackbar");
-//     snackbar.className = "show";
-//     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-//}

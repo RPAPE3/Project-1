@@ -218,22 +218,25 @@ button {
     font-size: 45px;
     color: white;
     display: inherit;
+    margin-left: 5px;
 }
 
-#username {
+#username, #zipCode {
     text-align: center;
     border-radius: 8px;
-    font-size: 25px;
-    margin-top: 80px;
+    font-size: 30px;
+    margin-top: 50px;
+    display: block;
+    margin-bottom: 5px;
 }
 
-#saveScoreBtn {
+#saveScoreBtn{
     color: white;
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 0px;
     font-size: 35px;
-    display: initial;
-    margin-left: 30px;
+    display: inherit;
+    margin-left: 50px;
     background-color: white;
 }
 
@@ -253,4 +256,12 @@ button {
     font-family: 'Bangers', cursive;
     font-size: 30px;
     margin-top: 20px;
+}
+
+#map{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: 30px;
 }
