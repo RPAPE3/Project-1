@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: black; 
 }
 
 #quiz {
@@ -10,10 +10,21 @@ body {
 }
 
 h2 {
-    color: white
+    color: white;
+    font-size: 75px
 }
 
-/* visual effects for title */ 
+.title {
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    font-size: 35px;
+    letter-spacing: 4px;
+    color: orange;
+    margin-top: 100px;
+}
+
+
+/* visual effects for title */
 .glitch {
     font-size: 7rem;
     font-weight: bold;
@@ -82,9 +93,9 @@ h2 {
     }
 }
 
-.difficulty, 
+.difficulty,
 .category {
-    font-size: 26px;
+    font-size: 35px;
     font-family: 'Bangers', cursive;
     border-radius: 10px;
     text-align: center;
@@ -104,28 +115,28 @@ button {
 
 #snackbar {
     visibility: hidden;
-    min-width: 250px; 
-    margin-left: 50px; 
-    background-color: #333; 
-    color: #fff; 
-    text-align: center; 
-    border-radius: 2px; 
-    padding: 6px; 
-    position: inherit; 
-    z-index: 1; 
+    min-width: 250px;
+    margin-left: 50px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 6px;
+    position: inherit;
+    z-index: 1;
     left: 60%;
-    bottom: 50px; 
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    bottom: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 26px;
     color: red;
     background-color: #000;
-  }
+}
 
-  #snackbar.show {
-    visibility: visible; 
+#snackbar.show {
+    visibility: visible;
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  }
+}
 
 /* visual effects for start and submit button */
 .glow-on-hover {
@@ -207,22 +218,25 @@ button {
     font-size: 45px;
     color: white;
     display: inherit;
+    margin-left: 5px;
 }
 
-#username {
+#username, #zipCode {
     text-align: center;
     border-radius: 8px;
-    font-size: 25px;
-    margin-top: 80px;
+    font-size: 30px;
+    margin-top: 50px;
+    display: block;
+    margin-bottom: 5px;
 }
 
-#saveScoreBtn {
+#saveScoreBtn{
     color: white;
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 0px;
     font-size: 35px;
-    display: initial;
-    margin-left: 30px;
+    display: inherit;
+    margin-left: 50px;
     background-color: white;
 }
 
@@ -242,4 +256,12 @@ button {
     font-family: 'Bangers', cursive;
     font-size: 30px;
     margin-top: 20px;
+}
+
+#map{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: 30px;
 }
