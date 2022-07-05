@@ -243,3 +243,7 @@ button {
     font-size: 30px;
     margin-top: 20px;
 }
+
+#map {
+    margin-left: 25px;
+}

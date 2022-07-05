@@ -43,6 +43,9 @@ var getQuestionData = function (category, difficulty) {
     question_screen = data[questionIndex];
     // console.log(questionIndex)
     console.log(question_screen)
+
+    var questionNumber = questionIndex + 1;
+    console.log(questionNumber)
   
     // gathering needed info from data index to an array. 
     var choicesArray = [
