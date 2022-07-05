@@ -1,5 +1,6 @@
 let locationEl = document.querySelector('#zipCode');
 var userNameEl = document.querySelector('#username');
+var finalScoreEl = document.querySelector('#finalScore');
 
 var transferData = document.location.search;
 var userStory;
@@ -110,3 +111,11 @@ function btn_handler(event) {
     Category: ${category} <br>
     Difficulty: ${difficulty}`); 
 }
+
+function finalScore() {
+    var fScore = `${score}`
+    finalScoreEl.textContent = ("Final Score: " + fScore);
+}
+
+
+finalScore()
